@@ -13,17 +13,23 @@
     "dev": "bun scripts/generate-docs.ts && vitepress dev .",
     "build": "bun scripts/generate-docs.ts && vitepress build .",
     "preview": "vitepress preview .",
-    "gen": "bun scripts/generate-docs.ts"
+    "gen": "bun scripts/generate-docs.ts",
+    "lint": "oxlint .",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
   "dependencies": {
-    "typeflowjs": "^0.0.2",
     "jq-wasm": "^3.0.0-jq-1.8.2",
-    "jsonata": "^2.2.1"
+    "jsonata": "^2.2.1",
+    "typeflowjs": "^0.0.2"
   },
   "devDependencies": {
+    "@typeflowjs/lint-config": "github:typeflow/lint-config",
     "@types/markdown-it-container": "^4.0.0",
     "@types/node": "^26.1.1",
     "markdown-it-container": "^4.0.0",
+    "oxfmt": "^0.61.0",
+    "oxlint": "^1.76.0",
     "typescript": "^5.5.0",
     "vitepress": "^1.6.4"
   },

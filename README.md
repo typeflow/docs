@@ -35,10 +35,10 @@ this repo has no source of its own beyond the docs site.
 
 ## Layout
 
-| Path                    | Role                                                     |
-| ----------------------- | --------------------------------------------------------- |
-| `*.md`, `fr/*.md`       | Hand-written pages (guide, home, benchmark)             |
-| `.vitepress/`           | VitePress config and theme (MiniPlayground, Benchmark, …) |
-| `scripts/generate-docs.ts` | Generates `operators/`, `functions/`, `reference/` from typeflowjs's builtins and diagnostics |
-| `scripts/doc-pages/`    | Hand-written operator docs + French translations, consumed by the generator |
-| `scripts/bench-scenarios.ts` | Scenarios shown on the `/benchmark` page (kept in sync with the same file in the main repo) |
+| Path                         | Role                                                                                          |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
+| `*.md`, `fr/*.md`            | Hand-written pages (guide, home, benchmark)                                                   |
+| `.vitepress/`                | VitePress config and theme (MiniPlayground, Benchmark, …)                                     |
+| `scripts/generate-docs.ts`   | Generates `operators/`, `functions/`, `reference/` from typeflowjs's builtins and diagnostics |
+| `scripts/doc-pages/`         | Hand-written operator docs + French translations, consumed by the generator                   |
+| `scripts/bench-scenarios.ts` | Scenarios shown on the `/benchmark` page (kept in sync with the same file in the main repo)   |

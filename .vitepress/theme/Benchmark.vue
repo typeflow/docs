@@ -299,7 +299,13 @@ function relOf(st: ScenarioState, r: EngineResult): number {
               class="bench-bar"
               :class="`bar-${e}`"
               :style="{
-                width: `${Math.max(1.5, relOf(states[s.id]!, states[s.id]!.results.find((r) => r.engine === e)!) * 100)}%`,
+                width: `${Math.max(
+                  1.5,
+                  relOf(
+                    states[s.id]!,
+                    states[s.id]!.results.find((r) => r.engine === e)!,
+                  ) * 100,
+                )}%`,
               }" />
           </span>
           <span v-if="states[s.id]!.results.length" class="bench-value">

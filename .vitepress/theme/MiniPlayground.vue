@@ -8,10 +8,10 @@ import {
 } from 'typeflowjs';
 import { computed, ref } from 'vue';
 import { highlightJson, highlightTypeflow } from './highlight';
-import { useData } from 'vitepress';
 import CodeEditor from './CodeEditor.vue';
 import { DEMO_FUNCTIONS } from './demo-functions';
 import { encodePlaygroundState } from './share';
+import { useData } from 'vitepress';
 
 const props = defineProps<{ mapping: string; input: string }>();
 
