@@ -12,7 +12,7 @@ From a TypeScript type (resolved through the TS compiler API):
 input user: ApiUser from "./user-types"
 ```
 
-Or declared inline (structural syntax — this is what the [Playground](/playground) uses):
+Or declared inline (structural syntax — this is what the [Playground](https://typeflow.github.io/playground/) uses):
 
 ```
 input user: {
@@ -130,7 +130,7 @@ map {
 }
 ```
 
-Functions can call builtins and functions declared above them; forward references are rejected, so there is no recursion and mappings stay terminating. `fn` definitions are part of the compiled artifact — they work anywhere the runtime runs, including the [playground](/playground).
+Functions can call builtins and functions declared above them; forward references are rejected, so there is no recursion and mappings stay terminating. `fn` definitions are part of the compiled artifact — they work anywhere the runtime runs, including the [playground](https://typeflow.github.io/playground/).
 
 ## Custom TypeScript functions
 

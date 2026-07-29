@@ -6,13 +6,11 @@ import FnIndex from './FnIndex.vue';
 import FnSignature from './FnSignature.vue';
 import HomeStats from './HomeStats.vue';
 import MiniPlayground from './MiniPlayground.vue';
-import Playground from './Playground.vue';
 import { type Theme } from 'vitepress';
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
-    app.component('Playground', Playground);
     app.component('MiniPlayground', MiniPlayground);
     app.component('Benchmark', Benchmark);
     app.component('FnIndex', FnIndex);

@@ -64,7 +64,7 @@ const view = mapUser(apiResponse);
 
 Pour les chemins chauds, compilez une fois et sérialisez : l'artefact compilé est du JSON pur, et
 `typeflowjs/runtime` est un minuscule interpréteur sans dépendance que vous pouvez embarquer seul
-(il tourne même dans le navigateur — le [playground](/fr/playground) n'est rien d'autre que ça).
+(il tourne même dans le navigateur — le [playground](https://typeflow.github.io/playground/) n'est rien d'autre que ça).
 
 ```ts
 import { compile } from 'typeflowjs';

@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Try the Playground
-      link: /playground
+      link: https://typeflow.github.io/playground/
     - theme: alt
       text: Getting started
       link: /guide/getting-started
@@ -154,9 +154,9 @@ $ bunx typeflow run user.typeflow --input data.json
 ```
 
 <div class="home-cta">
-  <a class="primary" href="/typeflow/guide/getting-started">Read the guide</a>
-  <a class="alt" href="/typeflow/playground">Open the playground</a>
-  <a class="alt" href="/typeflow/functions/">Browse all functions</a>
+  <a class="primary" href="/docs/guide/getting-started">Read the guide</a>
+  <a class="alt" href="https://typeflow.github.io/playground/">Open the playground</a>
+  <a class="alt" href="/docs/functions/">Browse all functions</a>
 </div>
 
 </div>

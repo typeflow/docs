@@ -64,7 +64,7 @@ const view = mapUser(apiResponse);
 
 For hot paths, compile once and serialize: the compiled artifact is plain JSON, and
 `typeflowjs/runtime` is a tiny dependency-free interpreter you can ship alone
-(it even runs in the browser — the [playground](/playground) is exactly that).
+(it even runs in the browser — the [playground](https://typeflow.github.io/playground/) is exactly that).
 
 ```ts
 import { compile } from 'typeflowjs';

@@ -172,6 +172,9 @@ function playgroundContainer(md: MarkdownIt): void {
 }
 
 const SITE = 'https://typeflow.github.io/docs/';
+// The interactive playground lives in its own repo/deploy
+// (github.com/typeflow/playground) — linked to, not embedded as a page here.
+const PLAYGROUND_SITE = 'https://typeflow.github.io/playground/';
 
 export default defineConfig({
   title: 'Typeflow',
@@ -221,7 +224,7 @@ export default defineConfig({
               { text: 'Diagnostics', link: '/fr/reference/diagnostics' },
             ],
           },
-          { text: 'Playground', link: '/fr/playground' },
+          { text: 'Playground', link: PLAYGROUND_SITE },
           { text: 'Benchmark', link: '/fr/benchmark' },
         ],
         sidebar: [
@@ -248,7 +251,7 @@ export default defineConfig({
           {
             text: 'Playground',
             items: [
-              { text: 'Essayer en direct', link: '/fr/playground' },
+              { text: 'Essayer en direct', link: PLAYGROUND_SITE },
               { text: 'Benchmark', link: '/fr/benchmark' },
             ],
           },
@@ -314,7 +317,7 @@ export default defineConfig({
           { text: 'Diagnostics', link: '/reference/diagnostics' },
         ],
       },
-      { text: 'Playground', link: '/playground' },
+      { text: 'Playground', link: PLAYGROUND_SITE },
       { text: 'Benchmark', link: '/benchmark' },
     ],
     sidebar: [
@@ -341,7 +344,7 @@ export default defineConfig({
       {
         text: 'Playground',
         items: [
-          { text: 'Try it live', link: '/playground' },
+          { text: 'Try it live', link: PLAYGROUND_SITE },
           { text: 'Benchmark', link: '/benchmark' },
         ],
       },

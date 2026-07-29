@@ -8,7 +8,7 @@ import {
 } from 'typeflowjs';
 import { computed, ref } from 'vue';
 import { highlightJson, highlightTypeflow } from './highlight';
-import { useData, withBase } from 'vitepress';
+import { useData } from 'vitepress';
 import CodeEditor from './CodeEditor.vue';
 import { DEMO_FUNCTIONS } from './demo-functions';
 import { encodePlaygroundState } from './share';
@@ -137,11 +137,12 @@ function editorHeight(text: string): string {
 const mappingHeight = computed(() => editorHeight(mappingText.value));
 const inputHeight = computed(() => editorHeight(inputText.value));
 
-// Deep link into the full playground, carrying the CURRENT editor state.
-const playgroundHref = computed(() =>
-  withBase(
-    `${lang.value === 'fr' ? '/fr' : ''}/playground#code=${encodePlaygroundState(mappingText.value, inputText.value)}`,
-  ),
+// Deep link into the standalone playground (github.com/typeflow/playground),
+// carrying the CURRENT editor state.
+const PLAYGROUND_SITE = 'https://typeflow.github.io/playground/';
+const playgroundHref = computed(
+  () =>
+    `${PLAYGROUND_SITE}#code=${encodePlaygroundState(mappingText.value, inputText.value)}`,
 );
 </script>
 
