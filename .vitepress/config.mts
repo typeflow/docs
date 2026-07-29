@@ -174,7 +174,9 @@ function playgroundContainer(md: MarkdownIt): void {
 const SITE = 'https://typeflow.github.io/docs/';
 // The interactive playground lives in its own repo/deploy
 // (github.com/typeflow/playground) — linked to, not embedded as a page here.
-const PLAYGROUND_SITE = 'https://typeflow.github.io/playground/';
+// Bare path, not a full URL: same origin (typeflow.github.io) as this site at a
+// different subpath, so VitePress treats it as internal and skips target="_blank".
+const PLAYGROUND_SITE = '/playground/';
 
 export default defineConfig({
   title: 'Typeflow',
@@ -269,7 +271,7 @@ export default defineConfig({
         langMenuLabel: 'Changer de langue',
         footer: {
           message: 'Publié sous licence MIT.',
-          copyright: 'Copyright © 2026 Thomas Farineau',
+          copyright: 'Copyright © 2026 Typeflow',
         },
       },
     },
@@ -354,7 +356,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026 Thomas Farineau',
+      copyright: 'Copyright © 2026 Typeflow',
     },
   },
   markdown: {
