@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Try the Playground
-      link: /playground/
+      link: https://typeflow.github.io/playground/
     - theme: alt
       text: Getting started
       link: /guide/getting-started
