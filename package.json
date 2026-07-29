@@ -1,0 +1,33 @@
+{
+  "name": "@typeflowjs/docs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Documentation and interactive playground for Typeflow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeflow/docs"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "bun scripts/generate-docs.ts && vitepress dev .",
+    "build": "bun scripts/generate-docs.ts && vitepress build .",
+    "preview": "vitepress preview .",
+    "gen": "bun scripts/generate-docs.ts"
+  },
+  "dependencies": {
+    "typeflowjs": "^0.0.1",
+    "jq-wasm": "^3.0.0-jq-1.8.2",
+    "jsonata": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/markdown-it-container": "^4.0.0",
+    "@types/node": "^24.0.0",
+    "markdown-it-container": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
