@@ -16,7 +16,7 @@
     "gen": "bun scripts/generate-docs.ts"
   },
   "dependencies": {
-    "typeflowjs": "^0.0.1",
+    "typeflowjs": "^0.0.2",
     "jq-wasm": "^3.0.0-jq-1.8.2",
     "jsonata": "^2.2.1"
   },
