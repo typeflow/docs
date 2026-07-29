@@ -174,9 +174,12 @@ function playgroundContainer(md: MarkdownIt): void {
 const SITE = 'https://typeflow.github.io/docs/';
 // The interactive playground lives in its own repo/deploy
 // (github.com/typeflow/playground) — linked to, not embedded as a page here.
-// Bare path, not a full URL: same origin (typeflow.github.io) as this site at a
-// different subpath, so VitePress treats it as internal and skips target="_blank".
-const PLAYGROUND_SITE = '/playground/';
+// Must be a full URL: VitePress applies withBase() to any link that isn't
+// externally-qualified, which would turn a bare '/playground/' into
+// '/docs/playground/'. Being a full URL also makes VitePress treat it as
+// external (target="_blank") — theme/index.ts strips that back off for
+// same-origin (typeflow.github.io) links once the page mounts.
+const PLAYGROUND_SITE = 'https://typeflow.github.io/playground/';
 
 export default defineConfig({
   title: 'Typeflow',
