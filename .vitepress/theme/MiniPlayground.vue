@@ -138,8 +138,9 @@ const mappingHeight = computed(() => editorHeight(mappingText.value));
 const inputHeight = computed(() => editorHeight(inputText.value));
 
 // Deep link into the standalone playground (github.com/typeflow/playground),
-// carrying the CURRENT editor state.
-const PLAYGROUND_SITE = 'https://typeflow.github.io/playground/';
+// carrying the CURRENT editor state. Bare path, not a full URL: same origin
+// (typeflow.github.io) as this site at a different subpath.
+const PLAYGROUND_SITE = '/playground/';
 const playgroundHref = computed(
   () =>
     `${PLAYGROUND_SITE}#code=${encodePlaygroundState(mappingText.value, inputText.value)}`,
@@ -161,9 +162,7 @@ const playgroundHref = computed(
           <a
             class="mp-reset mp-open"
             :href="playgroundHref"
-            :title="ui.openTitle"
-            target="_blank"
-            rel="noopener">
+            :title="ui.openTitle">
             {{ ui.open }}
           </a>
         </span>
