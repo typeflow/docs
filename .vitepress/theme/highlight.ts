@@ -1,4 +1,4 @@
-import { type Token, tokenize } from '../../../src/parser/index';
+import { type Token, tokenize } from 'typeflowjs';
 
 const KEYWORDS = new Set(['input', 'use', 'fn', 'map', 'from', 'let']);
 const LITERALS = new Set(['true', 'false', 'null']);

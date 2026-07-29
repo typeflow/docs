@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { BUILTIN_GROUPS } from '../../../src/builtins/index';
+import { BUILTIN_GROUPS } from 'typeflowjs';
 import { computed } from 'vue';
-import { DIAGNOSTICS } from '../../../scripts/doc-pages/diagnostics';
-import { DOC_PAGES } from '../../../scripts/doc-pages/index';
+import { DIAGNOSTICS } from '../../scripts/doc-pages/diagnostics';
+import { DOC_PAGES } from '../../scripts/doc-pages/index';
 import { useData } from 'vitepress';
 
 // Every number on this strip is computed from the same source of truth the

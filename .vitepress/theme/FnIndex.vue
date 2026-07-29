@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import { BUILTIN_GROUPS } from 'typeflowjs';
 import { computed, ref } from 'vue';
 import {
   FR_FUNCTION_DOCS,
   FR_FUNCTION_GROUPS,
-} from '../../../scripts/doc-pages/i18n/fr-functions';
+} from '../../scripts/doc-pages/i18n/fr-functions';
 import { useData, withBase } from 'vitepress';
-import { BUILTIN_GROUPS } from '../../../src/builtins/index';
 import { highlightTypeflow } from './highlight';
 
 /**
